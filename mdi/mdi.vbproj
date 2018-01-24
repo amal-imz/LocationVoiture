@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F0EC5B0-6099-41B1-BB98-08431595E544}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>mdi.My.MyApplication</StartupObject>
+    <RootNamespace>mdi</RootNamespace>
+    <AssemblyName>mdi</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>mdi.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>mdi.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=10.4.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=10.4.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=10.4.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.Instrumentation, Version=10.4.0.1, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0" />
+    <Reference Include="Gma.QrCodeNet.Encoding.Net45">
+      <HintPath>..\..\..\..\..\Desktop\all\School\Base de donnée Client Serveur\Gma.QrCodeNet.Encoding.Net45\Gma.QrCodeNet.Encoding.Net45.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.Designer.vb">
+      <DependentUpon>about.vb</DependentUpon>
+    </Compile>
+    <Compile Include="about.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="client.Designer.vb">
+      <DependentUpon>client.vb</DependentUpon>
+    </Compile>
+    <Compile Include="client.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employe.Designer.vb">
+      <DependentUpon>employe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="employe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emprunt.Designer.vb">
+      <DependentUpon>emprunt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="emprunt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="splash.Designer.vb">
+      <DependentUpon>splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statistique.Designer.vb">
+      <DependentUpon>statistique.vb</DependentUpon>
+    </Compile>
+    <Compile Include="statistique.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.vb">
+      <DependentUpon>test.vb</DependentUpon>
+    </Compile>
+    <Compile Include="test.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="voiture.Designer.vb">
+      <DependentUpon>voiture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="voiture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client.resx">
+      <DependentUpon>client.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employe.resx">
+      <DependentUpon>employe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emprunt.resx">
+      <DependentUpon>emprunt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statistique.resx">
+      <DependentUpon>statistique.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="voiture.resx">
+      <DependentUpon>voiture.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topnav-menu-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topnav-menu-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_flat_car_icon_car_png_web_icon_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20161014_58006bff8b1de.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20150831_55e46b1f4a412.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lend_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inside-logout-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7HXDQx7x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login form new %28small%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login form new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login form gggggggg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login button 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login button 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login button 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_effect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_effect1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-kkkicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo localtion de voiture2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auto_imeba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15391360_1277074115689555_966360429671948022_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tachometer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tachometer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tachometer %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tachometer %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\matricule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\license-plate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driver-license.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\license-plate %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\license-plate %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\license-plate %2855%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kilometrage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\matricule1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\matricule2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voiture_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_img1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_img2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_img3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_img11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_img21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_img31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border_add_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border_add_img1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-seat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\model.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border_tb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand-menu-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_img1_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_img2_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_img3_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date_dachat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\directoryy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_folder1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_folder2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_folder3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border_add_img2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border_add_img3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9 %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9 %281%291.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kk2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hhf.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client_img.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login form new%28blanc%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax_loader_gray_512.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cool loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading...1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-circles-loading-animation-large.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax_loader_blue_350.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_button_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_button_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash_screen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iOS7Loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border_tb1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-card1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telephone-of-old-design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email-envelope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driver-license1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\less.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qr code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qr-code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qr-code-variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border_qr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border_qr1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qr-code-variant1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
